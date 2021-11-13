@@ -1,0 +1,64 @@
+:root{
+    --primary-color: rgb(243,208,72);
+    --foren-color: #000;
+    --white-color: #fff;
+    --height-navbar: 36px;
+    --height-header: 120px;
+    --height-sibar: calc(var(--height-header) - var(--height-navbar));
+}
+*{
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* Reponsive */
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    margin-left: -5px;
+    margin-right: -5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+.grid__column-5 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 41.6667%;
+}
+.grid__column-5-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 60%;
+}
+.grid__column-5-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 40%;
+}
+/* Animation */
+@keyframes FadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
